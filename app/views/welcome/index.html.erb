@@ -1,24 +1,36 @@
 <div class="row">
   	<div class="col-md-4">
   		<form>
-			<div class="form-group">
-  				<label for="marca">Marca</label>
-				<select class="form-control">
-  					<option>1</option>
-  					<option>2</option>
-  					<option>3</option>
-  					<option>4</option>
-  					<option>5</option>
-				</select>
-				<label for="modelo">Modelo</label>
-				<select class="form-control">
-  					<option>1</option>
-  					<option>2</option>
-  					<option>3</option>
-  					<option>4</option>
-  					<option>5</option>
-				</select>
-			</div>
-  		<div class="col-md-4"></div>
+		<div class="form-group">
+			<label for="marca">Tipo de carro</label>
+			<select class="form-control">
+				<option> </option>
+  				<option>AUTO</option>
+  				<option>PICK_UPS</option>
+			</select>
+  			<label for="marca">Marca</label>
+			<select class="form-control">
+				<option> </option>
+  				<option>ALFA ROMEO</option>
+  				<option>AUDI</option>
+  				<option>CHEVROLET</option>
+  				<option>FERRARI</option>
+  				<option>FORD</option>
+			</select>
+			<label for="modelo">Modelo</label>
+			<select class="form-control">
+				<option> </option>
+  				<option>2000</option>
+  				<option>2003</option>
+  				<option>2006</option>
+  				<option>2009</option>
+  				<option>2012</option>
+			</select>
+			<br>
+			<input class="btn btn-default" type="submit" value="Comparar">
+		</div>
+  	</div>
+  	<div class="col-md-6">
+  		<%= link_to image_tag('carros.jpg', :alt => 'carros') %> 
 	</div>
 </div>

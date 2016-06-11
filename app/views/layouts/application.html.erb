@@ -7,8 +7,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
 <header>
 <nav class="navbar navbar-default navbar-inverse" role="navigation">
   <div class="container-fluid">
@@ -33,6 +31,7 @@
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Ser premium</a></li>
             <li class="divider"></li>
+
             <li><a href="#">Conocenos</a></li>
           </ul>
         </li>
@@ -101,6 +100,8 @@
 			</li>
 		</ul>
 	</nav> -->
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 </header>
 <%= yield %>
 
