@@ -7,7 +7,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<header>
+	<nav class="be-red white large-padding">
+		<ul class="no-list row center-xs middle-xs">
+			<li class="col-md">
+				<h1 class="no-margin" id="logo">Seguro compara</h1>
+			</li>
+			<li class="col-md">
+				<%= link_to "Inicio", root_path %>
+			</li>
+			<li class="col-md">
+				Acerca de
+			</li>
+			<li class="col-md">
+				Registro
+			</li>
+			<li class="col-md">
+				contactanos
+			</li>
+		</ul>
+	</nav>
+</header>
 <%= yield %>
 
 </body>
