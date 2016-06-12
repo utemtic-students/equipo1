@@ -1,6 +1,3 @@
-body{
-   margin: 0px;
-}
 
 #login-dp{
     min-width: 250px;
@@ -51,4 +48,57 @@ body{
         background-color: inherit;
         border-top:0 none;
     }
+}
+
+//CSS de la pagina Ayuda 
+
+body{
+    background: #F2F2F2;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+#encabezado {
+    width: 100%;
+    height: 200px;
+}
+
+#anuncio {
+    width: auto;
+    height: 250px;
+}
+
+#menu section p{
+    display: none;
+}
+
+#menu section a {
+    text-align: center;
+    color: grey;
+    text-decoration: none;
+}
+
+#menu section a:hover {
+    text-decoration: underline;
+}
+
+#menu section:target p {
+    display: block;
+}
+
+#izquierdo{
+float:left;
+text-align: right;
+padding:10px;  
+width:450px; 
+margin:40px;
+}
+
+#derecho{
+float:left;
+padding:10px;  
+width:400px; 
+margin:40px;
 }
