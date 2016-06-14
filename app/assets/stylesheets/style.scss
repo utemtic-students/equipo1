@@ -93,3 +93,22 @@ body{
 #menu section:target p {
     display: block;
 }
+
+//CSS de la pagina mi perfil
+
+#columna1{
+background: red;
+padding: 10px;
+float: left;
+width: 45%;
+height: 70%;
+text-align: center;
+}
+
+#columna2 {
+background: blue;
+padding: 10px; 
+float: right; 
+width: 45%; 
+text-align: center;
+}

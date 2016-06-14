@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'welcome/index'
   get 'welcome/ayuda'
+  get 'welcome/miperfil'
   get 'welcome/acerca_de'
 
   # The priority is based upon order of creation: first created -> highest priority.
