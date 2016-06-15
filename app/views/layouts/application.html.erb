@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <title>SeguroCompara</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -19,7 +19,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+<<<<<<< HEAD
       <a class="navbar-brand" href="#">Seguro compara</a>
+=======
+
+     <a class="navbar-brand" href="SeguroCompara">Seguro Compara</a>
+
+
+     
+>>>>>>> 01ed72668ba8e12ed5dbbd4ad0e699cf356c2602
       <% if user_signed_in? %>
       	<%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %>
       <%end%>
@@ -29,8 +37,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+<<<<<<< HEAD
         <li class="active"><a href="acerca_de">Acerca de</a></li>
         <li><a href="#">Link</a></li>
+=======
+        <li><a href="Acerca">Acerca de</a></li>
+        <li><a href="Ayuda">Ayuda</a></li>
+>>>>>>> 01ed72668ba8e12ed5dbbd4ad0e699cf356c2602
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acciones <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">

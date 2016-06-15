@@ -93,3 +93,23 @@ body{
 #menu section:target p {
     display: block;
 }
+
+
+
+//CSS para las columnas 
+
+#columna1{
+padding: 10px;
+float: left;
+width: 50%;
+height: 70%;
+text-align: center;
+}
+
+#columna2 {
+padding: 10px; 
+float: right; 
+width: 50%; 
+text-align: center;
+}
+
