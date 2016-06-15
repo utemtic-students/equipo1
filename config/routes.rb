@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'welcome/index'
-  get 'welcome/ayuda'
-  get 'welcome/miperfil'
-  get 'welcome/acerca_de'
+  
+  # Estas son las rutas definidas para navegar por la pagina, si agregas
+  # una nueva ventana
+  get "SeguroCompara", to: "welcome#index"
+  
+  get "Ayuda", to: "welcome#ayuda"
+
+  get "Perfil", to: "welcome#miperfil"
+
+  get "Acerca", to: "welcome#acerca_de"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

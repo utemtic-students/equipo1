@@ -20,7 +20,10 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="#">Seguro Compara</a>
+     <a class="navbar-brand" href="SeguroCompara">Seguro Compara</a>
+
+
+     
       <% if user_signed_in? %>
       	<%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %>
       <%end%>
@@ -29,8 +32,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="acerca_de">Acerca de</a></li>
-        <li><a href="#">Ayuda</a></li>
+        <li><a href="Acerca">Acerca de</a></li>
+        <li><a href="Ayuda">Ayuda</a></li>
         <li class="dropdown">
           <li><a href="#">Ser premium</a></li>
             <li class="divider"></li>
