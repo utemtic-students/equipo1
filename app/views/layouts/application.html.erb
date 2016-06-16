@@ -19,16 +19,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-<<<<<<< HEAD
+
       <a class="navbar-brand" href="#">Seguro compara</a>
-=======
+
 
      <a class="navbar-brand" href="SeguroCompara">Seguro Compara</a>
 
-
-     
->>>>>>> 01ed72668ba8e12ed5dbbd4ad0e699cf356c2602
-      <% if user_signed_in? %>
+     <% if user_signed_in? %>
       	<%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %>
       <%end%>
 
@@ -37,13 +34,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-<<<<<<< HEAD
+
         <li class="active"><a href="acerca_de">Acerca de</a></li>
         <li><a href="#">Link</a></li>
-=======
+
         <li><a href="Acerca">Acerca de</a></li>
         <li><a href="Ayuda">Ayuda</a></li>
->>>>>>> 01ed72668ba8e12ed5dbbd4ad0e699cf356c2602
+
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acciones <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -67,31 +64,7 @@
 									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
 									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
 								</div>
-                                por tu cuenta
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+                             Iniciar sesión
 							</div>
 							<div class="bottom text-center">
 								Eres nuevo ? <a href="#"><b>Registrate!</b></a>
