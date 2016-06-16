@@ -13,8 +13,6 @@
       <a class="navbar-brand" href="#">Seguro compara</a>
 
 
-     <a class="navbar-brand" href="SeguroCompara">Seguro Compara</a>
-
      <% if user_signed_in? %>
       	<%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %>
       <%end%>
@@ -25,7 +23,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
 
-        <li class="active"><a href="acerca_de">Acerca de</a></li>
+        
         <li><a href="#">Link</a></li>
 
         <li><a href="Acerca">Acerca de</a></li>
@@ -54,7 +52,9 @@
 									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
 									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
 								</div>
-                             Iniciar sesión
+                             Iniciar sesión:
+                             
+
 							</div>
 							<div class="bottom text-center">
 								Eres nuevo ? <a href="#"><b>Registrate!</b></a>
