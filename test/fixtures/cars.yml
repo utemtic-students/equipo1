@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo_de_carro: MyString
+  marca: MyString
+  modelo: 1
+
+two:
+  tipo_de_carro: MyString
+  marca: MyString
+  modelo: 1
