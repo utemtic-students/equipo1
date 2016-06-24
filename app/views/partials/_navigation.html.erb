@@ -12,11 +12,6 @@
 
       <a class="navbar-brand" href="#">Seguro compara</a>
 
-
-     <% if user_signed_in? %>
-      	<%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %>
-      <%end%>
-
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,18 +42,26 @@
 				<li>
 					 <div class="row">
 							<div class="col-md-12">
-								Conectate a traves de
+              <% if user_signed_in? %>
+        <%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %>
+        <%= link_to "Editar Perfil", edit_user_registration_path(current_user) %>
+
+
+              
+              <%else%>
+      				Conectate a traves de
 								<div class="social-buttons">
 									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
 									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
 								</div>
+
                              Iniciar sesión:
                              
-
 							</div>
 							<div class="bottom text-center">
 								Eres nuevo ? <a href="#"><b>Registrate!</b></a>
 							</div>
+              <% end %>
 					 </div>
 				</li>
 			</ul>
