@@ -62,9 +62,10 @@
 								</div>
 
                              Iniciar sesión:
-                <%= form_for(:user, :url => session_path(:user)) do |f| %>
+
+  <%= form_for(:user, :url => session_path(:user)) do |f| %>
   <%= f.text_field :email %>
-  <%= f.password_field :password %>
+  <%= f.password_field :password %> <br>
   <%= f.check_box :remember_me %>
   <%= f.label :remember_me %>
   <%= f.submit 'Sign in' %>
@@ -72,8 +73,8 @@
 <% end %>             
                              
 							</div>
-							<div class="bottom text-center">
-								Eres nuevo ? <a href="Perfil">Registrate!</a>
+							<div class="bottom text-center"> 
+								Eres nuevo ? <%= link_to "Registrate!", new_user_registration_path %><!-- <a href="Perfil">Registrate!</a> -->
 							</div>
               <% end %>
 					 </div>
