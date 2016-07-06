@@ -10,11 +10,7 @@
         <span class="icon-bar"></span>
       </button>
 
-     <a class="navbar-brand" href="SeguroCompara">Seguro Compara</a>
-
-     <% if user_signed_in? %>
-      	<%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %>
-      <%end%>
+      <a class="navbar-brand" href="#">Seguro compara</a>
 
     </div>
 
@@ -22,11 +18,24 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
 
+        
+        <li><a href="#">Link</a></li>
+
         <li><a href="Acerca">Acerca de</a></li>
         <li><a href="Ayuda">Ayuda</a></li>
 
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acciones <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Ser premium</a></li>
+            <li class="divider"></li>
+
+            <li><a href="#">Conocenos</a></li>
+          </ul>
+        </li>
+
             <li><a href="Perfil">Ser premium</a></li>
-        
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><p class="navbar-text">Ya tienes una cuenta?</p></li>
@@ -36,45 +45,43 @@
 				<li>
 					 <div class="row">
 							<div class="col-md-12">
-								Conectate a traves de
+              <% if user_signed_in? %>
+     
+        <%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %>
+        <%= link_to "Editar Perfil", edit_user_registration_path(current_user) %>
+              
+              <%else%>
+      				Conectate a traves de
 								<div class="social-buttons">
 									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
 									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
 								</div>
-                             Iniciar sesión
+
+                             Iniciar sesión:
+
+<!-- Formulario para iniciar sesión. -->
+
+  <%= form_for(:user, :url => session_path(:user)) do |f| %>
+  <%= f.text_field :email, class:"form-control" %>
+  <%= f.password_field :password, class:"form-control" %> <br>
+  <%= f.check_box :remember_me %>
+  <%= f.label :remember_me %>
+  <%= f.submit 'Sign in' %>
+  <%= link_to "Forgot your password?", new_password_path(:user) %>
+
+<% end %>             
+                             
 							</div>
-							<div class="bottom text-center">
-								Eres nuevo ? <a href="Perfil">Registrate!</a>
+							<div class="bottom text-center"> 
+								Eres nuevo ? <%= link_to "Registrate!", new_user_registration_path %> 
 							</div>
+              <% end %>
 					 </div>
 				</li>
 			</ul>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-	<!-- <nav class="be-red white large-padding">
-		<ul class="no-list row center-xs middle-xs">
-			<li class="col-md">
-				<h1 class="no-margin" id="logo">Seguro compara</h1>
-			</li>
-			<li class="col-md">
-				<= link_to "Inicio", root_path %>
-			</li>
-			<li class="col-md">
-				Acerca de
-			</li>
-			<li class="col-md">
-				Registro
-			</li>
-			<li class="col-md">
-				contactanos
-			</li>
-		</ul>
-	</nav> 
-
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
--->
+    </div>
+  </div>
+ </nav>
 </header>

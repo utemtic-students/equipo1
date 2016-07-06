@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   devise_for :users
   
   # Estas son las rutas definidas para navegar por la pagina, si agregas
