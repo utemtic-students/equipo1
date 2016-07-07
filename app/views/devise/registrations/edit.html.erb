@@ -9,17 +9,17 @@
   </div>
 
   <div class="field">
-    <%= f.label :last_name,"Nombre: " %> <br />
+    <%= f.label :last_name,"Apellido: " %> <br />
     <%= f.text_field :last_name%>
   </div>
 
   <div class="field">
-     <%= f.label :cp, "Codigo postal:" %> <br />
+     <%= f.label :cp, "Codigo postal: " %> <br />
      <%= f.number_field :cp %> 
   </div>
 
   <div class="field">
-    <%= f.label :cellphone, "Telefono" %> <br />
+    <%= f.label :cellphone, "Telefono: " %> <br />
     <%= f.telephone_field :cellphone%>
   </div>
 
@@ -34,7 +34,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :date_birth, "Fecha de nacimiento" %><br />
+    <%= f.label :date_birth, "Fecha de nacimiento: " %><br />
     <%= f.date_select :date_birth%>
   </div>
 
@@ -48,22 +48,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :password %> <i>(Dejala en blanco si no quieres cambiarla)</i><br />
+    <%= f.label :password, "Contraseña: " %> <i>(Dejala en blanco si no quieres cambiarla)</i><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :password_confirmation, "Confirmar contraseña: " %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :current_password %> <i>(Requerimos de tu contraseña actual)</i><br />
+    <%= f.label :current_password, "Contraseña actual: " %> <i>(Requerimos de tu contraseña actual)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Update" %>
+    <%= f.submit "Actualizar" %>
   </div>
 <% end %>
 
