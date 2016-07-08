@@ -115,21 +115,6 @@ text-align: center;
 }
 
 
-#columna3 {
-padding: 10px; 
-float: right; 
-width: 25%; 
-text-align: center;
-}
-
-#columna4 {
-padding: 10px; 
-float: right; 
-width: 25%; 
-text-align: center;
-}
-
-
 ///// CSS DE ACERCA DE
 
 .footer{
@@ -142,7 +127,7 @@ text-align: center;
 }
 #menu-acerca section p{
     display: none;
-    
+
     
 }
 
@@ -168,6 +153,37 @@ text-align: center;
     position: center;
     
     
+}
+///// COLUMNAS ACERCA DE
+
+#columna1acerca{
+padding: 10px;
+float: left;
+width: 25%;
+height: 70%;
+text-align: center;
+}
+
+#columna2acerca {
+padding: 10px; 
+float: right; 
+width: 25%; 
+text-align: center;
+}
+
+
+#columna3acerca {
+padding: 10px; 
+float: right; 
+width: 25%; 
+text-align: center;
+}
+
+#columna4acerca {
+padding: 10px; 
+float: right; 
+width: 25%; 
+text-align: center;
 }
 
 
