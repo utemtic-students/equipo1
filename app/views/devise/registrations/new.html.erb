@@ -4,8 +4,49 @@
   <%= devise_error_messages! %>
 
   <div class="field">
+    <%= f.label :name, "Nombre(s): " %> <br />
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name, "Apellidos: " %> <br />
+    <%= f.text_field :last_name%>
+  </div>
+
+  <div class="field">
+     <%= f.label :cp, "Codigo postal: " %> <br />
+     <%= f.number_field :cp %> 
+  </div>
+
+  <div class="field">
+    <%= f.label :cellphone, "Telefono: "%> <br />
+    <%= f.telephone_field :cellphone%>
+  </div>
+
+  <div class="field">
+     <%= f.check_box :is_female, {}, true %>
+     <%= f.label :is_female, "Mujer" %> 
+  </div>
+    
+  <div class="field">
+  <%= f.check_box :is_female, {}, false %>
+  <%= f.label :is_female, "Hombre" %> 
+  </div>
+
+  <div class="field">
+    <%= f.label :date_birth, "Fecha de nacimiento: " %><br />
+    <%= f.date_select :date_birth%>
+  </div>
+
+  <div class="field">
+    <%= f.label :email, "Email: " %><br />
+    <%= f.email_field :email %>
+  </div>
+
+
+  <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email%>
   </div>
 
   <div class="field">
@@ -24,6 +65,6 @@
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
-<% end %>
+  
 
 <%= render "devise/shared/links" %>

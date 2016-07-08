@@ -12,7 +12,6 @@ Rails.application.routes.draw do
 
   get "Acerca", to: "welcome#acerca_de"
 
-  get "Perfil", to: "welcome#miperfil"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
