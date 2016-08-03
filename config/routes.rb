@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   
   devise_for :users
+  resources :cars
   
   # Estas son las rutas definidas para navegar por la pagina, si agregas
   # una nueva ventana
+
   get "SeguroCompara", to: "welcome#index"
   
   get "Ayuda", to: "welcome#ayuda"
