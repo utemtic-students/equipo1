@@ -5,16 +5,19 @@ Rails.application.routes.draw do
   
   # Estas son las rutas definidas para navegar por la pagina, si agregas
   # una nueva ventana
+<<<<<<< HEAD
 
   get "SeguroCompara", to: "welcome#index"
+=======
+  get "seguroCompara", to: "welcome#index"
+>>>>>>> a09e2082bfda28726ee9612f6dff4a9df4932637
   
-  get "Ayuda", to: "welcome#ayuda"
+  get "ayuda", to: "welcome#ayuda"
 
-  get "Perfil", to: "welcome#miperfil"
+  get "perfil", to: "welcome#miperfil"
 
-  get "Acerca", to: "welcome#acerca_de"
+  get "acerca", to: "welcome#acerca_de"
 
-  get "Perfil", to: "welcome#miperfil"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
