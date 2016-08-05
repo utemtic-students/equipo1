@@ -5,12 +5,8 @@ Rails.application.routes.draw do
   
   # Estas son las rutas definidas para navegar por la pagina, si agregas
   # una nueva ventana
-<<<<<<< HEAD
-
-  get "SeguroCompara", to: "welcome#index"
-=======
   get "seguroCompara", to: "welcome#index"
->>>>>>> a09e2082bfda28726ee9612f6dff4a9df4932637
+
   
   get "ayuda", to: "welcome#ayuda"
 
