@@ -1,0 +1,21 @@
+<% name||= "Agregar"%>
+ <h1><%= name %> Carro </h1>
+ <%= form_for(@cars) do |f| %>
+    <% @cars.errors.full_messages.each do |message| %>
+      <div class="be-red white top-space">
+        * <%= message %>
+      </div>  
+    <%end%> 
+  <div class="field">
+    <%= f.text_field :tipo_de_carro, placeholder: "Tipo de carro", class:"form-control" %>
+  </div>
+  <div class="field">
+  <%= f.text_field :marca, placeholder: "Marca", class:"form-control"%>
+  </div>
+  <div class="field">
+  <%= f.number_field :modelo, placeholder: "Modelo", class:"form-control" %>
+  </div>
+  <div class="field">
+    <%= f.submit "Guardar", class:"btn be-red white large-padding" %>
+  </div>
+ <%end%>
