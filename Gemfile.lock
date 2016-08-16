@@ -190,6 +190,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  mechanize
   pg
   rails (= 4.2.6)
   rails_12factor
